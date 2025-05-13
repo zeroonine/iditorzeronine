@@ -1,0 +1,173 @@
+/* Gaya untuk body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(135deg, #f0f9ff, #c0e8ff);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container utama */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* Gaya untuk card */
+.card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  text-align: center;
+  width: 350px;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Menyembunyikan elemen */
+.hidden {
+  display: none;
+  opacity: 0;
+}
+
+/* Gaya untuk heading */
+.card h1 {
+  font-size: 1.5rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+/* Gaya untuk paragraf */
+.card p {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 20px;
+}
+
+/* Gaya untuk form */
+.card form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Input form */
+.card input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+/* Tombol */
+.card button {
+  padding: 10px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Verifikasi box */
+.verification-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Heading dalam verifikasi box */
+.verification-box h2 {
+  font-size: 1.25rem;
+  color: #333333;
+  margin-bottom: 10px;
+}
+
+.verification-box h3 {
+  font-size: 1rem;
+  color: #666666;
+  margin-bottom: 15px;
+}
+
+.verification-box p {
+  font-size: 0.9rem;
+  color: #555555;
+}
+
+.verification-box .highlight {
+  font-weight: bold;
+  color: #ff4500;
+  margin-top: 15px;
+}
+
+/* Video container */
+.video-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  margin-top: 20px;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Footer */
+footer.footer {
+  background-color: #f9f9f9;
+  padding: 20px;
+  text-align: center;
+  border-top: 1px solid #ddd;
+  margin-top: 30px;
+}
+
+footer.footer p {
+  font-size: 0.9rem;
+  color: #666666;
+  margin: 0;
+}
+
+footer.footer .footer-links {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0 0;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+footer.footer .footer-links li {
+  display: inline;
+}
+
+footer.footer .footer-links a {
+  text-decoration: none;
+  font-size: 0.9rem;
+  color: #007bff;
+  transition: color 0.3s ease;
+}
+
+footer.footer .footer-links a:hover {
+  color: #0056b3;
+}
