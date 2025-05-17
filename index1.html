@@ -73,17 +73,17 @@
       display: flex;
       justify-content: center;
       gap: 18px;
-      margin: 1.8rem 0 0 0;
+      margin-bottom: 1.3rem;
       flex-wrap: wrap;
     }
     .cta-btn {
       background: linear-gradient(90deg, var(--primary) 55%, var(--accent) 100%);
-      color: #fff;
-      font-size: 1.13rem;
+      color: var(--white);
+      font-size: 1.16rem;
       font-weight: 700;
-      padding: 14px 32px;
+      padding: 16px 40px;
       border: none;
-      border-radius: 28px;
+      border-radius: 30px;
       box-shadow: 0 4px 16px rgba(127,83,172,0.14);
       text-decoration: none;
       transition: transform 0.11s, box-shadow 0.11s, background 0.18s;
@@ -92,10 +92,16 @@
       outline: none;
       position: relative;
       overflow: hidden;
-      margin-bottom: 8px;
+      border-bottom: 3px solid #00b1b8;
     }
-    .cta-btn.team2 {
+    .cta-btn:nth-child(2) {
       background: linear-gradient(90deg, var(--secondary) 65%, var(--primary) 100%);
+      border-bottom: 3px solid #ff5696;
+    }
+    .cta-btn:hover, .cta-btn:focus {
+      transform: translateY(-2px) scale(1.04);
+      box-shadow: 0 8px 32px rgba(127,83,172,0.19);
+      filter: brightness(1.09);
     }
     .badge-secure {
       display: inline-flex;
@@ -270,25 +276,15 @@
     <h1>Unlock Your Creativity with <span style="background:linear-gradient(90deg,#00c4cc,#ff6f91);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">Canva Pro Team</span> Access!</h1>
     <p>Collaborate seamlessly, design like a pro, and access premium features.<br>
       Join a Canva Pro Team today and elevate your creative projects!</p>
-    <img src="https://platform.theverge.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/25355957/STK263_CANVA_D.png?quality=90&strip=all&crop=0,10.732984293194,100,78.534031413613" alt="Creative Design Art" class="creative-art">
+    <img src="https://cdn.dribbble.com/users/310943/screenshots/15124669/media/1eaa0c9f6e82b0ee6d7b3e5b2e9d0a98.png?compress=1&resize=800x600" alt="Creative Design Art" class="creative-art">
     <div class="cta-buttons">
-      <button class="cta-btn" onclick="_jb()">Join Team 1</button>
-      <button class="cta-btn team2" onclick="_xA()">Join Team 2</button>
+      <a href="#join1" class="cta-btn">Join Team 1</a>
+      <a href="#join2" class="cta-btn">Join Team 2</a>
     </div>
     <div class="badge-secure">
       <svg fill="none" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 1 7 7v2.4c0 1.88.66 3.68 1.87 5.1a2.69 2.69 0 0 1-2.15 4.48H5.28a2.69 2.69 0 0 1-2.15-4.48A9.11 9.11 0 0 0 5 11.4V9a7 7 0 0 1 7-7Zm0 2a5 5 0 0 0-5 5v2.4a11.13 11.13 0 0 1-2.09 6.43.69.69 0 0 0 .54 1.17h14.44a.69.69 0 0 0 .54-1.17A11.14 11.14 0 0 1 17 9V7a5 5 0 0 0-5-5Z"/></svg>
       Secure & Fast Access
     </div>
-        <!-- Script for Button 1 -->
-  <script type="text/javascript">
-    var sfFZI_dQl_iGzQUc = {"it":4494009,"key":"96cc5"};
-  </script>
-  <script src="https://d2yc6hxtq0phup.cloudfront.net/3d56aaa.js"></script>
-  <!-- Script for Button 2 -->
-  <script type="text/javascript">
-    var cWuVY_tJA_NzkIYc = {"it":4490203,"key":"b4ea5"};
-  </script>
-  <script src="https://d2v7l2267atlz5.cloudfront.net/720cbad.js"></script>
   </header>
   <section class="features">
     <div class="feature-item">
